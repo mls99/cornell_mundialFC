@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Cornell Mundial F.C.</title>
+
+  <link rel="stylesheet" type="text/css" href="styles/all.css" media="all">
+  <script type="text/javascript" src="scripts/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="scripts/dropdown.js"></script>
+  <script type="text/javascript" src="scripts/timeline.js"></script>
+</head>
+
+<body>
+  <div class="whole-page">
+    <div class="desktop-nav">
+      <!-- Source: Image is owned by the club -->
+      <a href="index.html">
+        <img src="images/logo.jpeg" alt="Club Logo" class="logo"/>
+      </a>
+
+      <ul class="nav-links">
+        <li>
+          <a href="index.html">Welcome!</a>
+        </li>
+
+        <li>
+          <a href="schedule.html">Schedule</a>
+        </li>
+
+        <li>
+          <a href="members.html">Members</a>
+        </li>
+
+        <li>
+          <a href="teamhistory.html">Team History</a>
+        </li>
+
+        <li>
+          <a href="jointheteam.html">Join The Team!</a>
+        </li>
+      </ul>
+
+      <div class="social-media flex-row">
+        <div class="sm-link">
+          <a href="https://www.facebook.com/cornellmundialfc/" target="_blank">
+            <!-- Source: https://en.facebookbrand.com/#brand-guidelines-assets -->
+            <img src="images/fb-logo.png" alt="FB Logo">
+          </a>
+          <a class="cite" href="https://en.facebookbrand.com/#brand-guidelines-assets">Icon Source</a>
+        </div>
+
+        <div class="sm-link">
+          <a href="mailto:az262@cornell.edu">
+            <!-- Source: http://gsuite.google.com/setup/resources/logos/ -->
+            <img src="images/gmail-logo.png" alt="GMail Logo">
+          </a>
+          <a class="cite" href="http://gsuite.google.com/setup/resources/logos/">Icon Source</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="mobile-nav">
+      <ul id="dropdown-links" class="nav-links hidden">
+        <li>
+          <a href="index.html">Welcome!</a>
+        </li>
+
+        <li>
+          <a href="schedule.html">Schedule</a>
+        </li>
+
+        <li>
+          <a href="members.html">Members</a>
+        </li>
+
+        <li>
+          <a href="teamhistory.html">Team History</a>
+        </li>
+
+        <li>
+          <a href="jointheteam.html">Join The Team!</a>
+        </li>
+
+      </ul>
+    </div>
+
+    <div class="main-content">
+      <header class="main-header">
+        <div class="flex-row">
+          <a id="dropdown" href="#">
+            &#8801;
+          </a>
+
+          <div class="header-title">
+            <h1>Cornell Mundial F.C.</h1>
+            <h2>Men's Club Soccer</h2>
+          </div>
+        </div>
+      </header>
+
+      <h2 class="page-title">Team History</h2>
+
+      <p class="use-timeline">Click the points on the timeline to see how the team did that year!</p>
+
+      <div class="timeline">
+        <div class="timeline-point">
+          <a id="point-11" href="#" class="point-clicked"></a>
+          <div class="timeline-year">'11 &ndash; '12</div>
+        </div>
+
+        <div class="timeline-point">
+          <a id="point-12" href="#"></a>
+          <div class="timeline-year">'12 &ndash; '13</div>
+        </div>
+
+        <div class="timeline-point">
+          <a id="point-13" href="#"></a>
+          <div class="timeline-year">'13 &ndash; '14</div>
+        </div>
+
+        <div class="timeline-point">
+          <a id="point-14" href="#"></a>
+          <div class="timeline-year">'14 &ndash; '15</div>
+        </div>
+
+        <div class="timeline-point">
+          <a id="point-15" href="#"></a>
+          <div class="timeline-year">'15 &ndash; '16</div>
+        </div>
+
+        <div class="timeline-point">
+          <a id="point-16" href="#"></a>
+          <div class="timeline-year">'16 &ndash; '17</div>
+        </div>
+
+        <div class="timeline-point">
+          <a id="point-17" href="#"></a>
+          <div class="timeline-year">'17 &ndash; '18</div>
+        </div>
+
+        <div class="timeline-point">
+          <a id="point-18" href="#"></a>
+          <div class="timeline-year">'18 &ndash; '19</div>
+        </div>
+      </div> <!-- End Timeline-->
+
+      <div class="timeline-mobile">
+        <div class="timeline-line">
+        </div>
+
+        <a href="#year-text" id="point-11m" class="timeline-point-mobile flex-row area-active">
+          <div class="tpoint">
+            <div class="circle"></div>
+          </div>
+
+          <div class="ttext">
+            <div class="timeline-text-mobile">2011 &ndash; 2012</div>
+          </div>
+        </a>
+
+        <a href="#year-text" id="point-12m" class="timeline-point-mobile flex-row">
+          <div class="tpoint">
+            <div class="circle"></div>
+          </div>
+
+          <div class="ttext">
+            <div class="timeline-text-mobile">2012 &ndash; 2013</div>
+          </div>
+        </a>
+
+        <a href="#year-text" id="point-13m" class="timeline-point-mobile flex-row">
+          <div class="tpoint">
+            <div class="circle"></div>
+          </div>
+
+          <div class="ttext">
+            <div class="timeline-text-mobile">2013 &ndash; 2014</div>
+          </div>
+        </a>
+
+        <a href="#year-text" id="point-14m" class="timeline-point-mobile flex-row">
+          <div class="tpoint">
+            <div class="circle"></div>
+          </div>
+
+          <div class="ttext">
+            <div class="timeline-text-mobile">2014 &ndash; 2015</div>
+          </div>
+        </a>
+
+        <a href="#year-text" id="point-15m" class="timeline-point-mobile flex-row">
+          <div class="tpoint">
+            <div class="circle"></div>
+          </div>
+
+          <div class="ttext">
+            <div class="timeline-text-mobile">2015 &ndash; 2016</div>
+          </div>
+        </a>
+
+        <a href="#year-text" id="point-16m" class="timeline-point-mobile flex-row">
+          <div class="tpoint">
+            <div class="circle"></div>
+          </div>
+
+          <div class="ttext">
+            <div class="timeline-text-mobile">2016 &ndash; 2017</div>
+          </div>
+        </a>
+
+        <a href="#year-text" id="point-17m" class="timeline-point-mobile flex-row">
+          <div class="tpoint">
+            <div class="circle"></div>
+          </div>
+
+          <div class="ttext">
+            <div class="timeline-text-mobile">2017 &ndash; 2018</div>
+          </div>
+        </a>
+
+        <a href="#year-text" id="point-18m" class="timeline-point-mobile flex-row">
+          <div class="tpoint">
+            <div class="circle"></div>
+          </div>
+
+          <div class="ttext">
+            <div class="timeline-text-mobile">2018 &ndash; 2019</div>
+          </div>
+        </a>
+
+      </div>
+
+      <div id="year-text">
+        <div id="year-11">
+          <h2>2011-2012 Season</h2>
+          <p>
+            In the 2011-2012 Outdoor Season, hard work on and off the field led to great success for Mundial. Ranking as high as 3rd in Region One and finishing ranked sixth, Mundial went 14-4-2, and made it to the elimination phase of the Regional Tournament, representing Cornell for the second straight year and extending its winning streak against all other Cornell teams to two years in all competitions. The team also placed second at the highly-competitive Penn State tournament.  While the elusive bid to nationals slipped away from the team by one win for the second year in a row, the players of Mundial are determined to keep improving and playing soccer at the highest level. Mundial also enjoyed a successful indoor season in men's and co-ed leagues.
+          </p>
+          <!-- Source: Image is owned by the club -->
+          <figure>
+            <img src="images/2011-12.jpg" alt="2012" class="oldPics"/>
+            <figcaption> 2011-12 Season </figcaption>
+          </figure>
+
+          <h2>Results</h2>
+
+          <div class="outsidebox">
+            <div class="home">
+              <span>Penn State Tournament - Finals</span>
+            </div>
+
+            <div class="columns">
+
+              <div class="time">
+                <span>L</span>
+              </div>
+
+              <div class="middle">
+                <span class ="teams">Cornell 0-1 Penn State</span>
+              </div>
+
+              <div class="place">
+                <span>W</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="outsidebox">
+            <div class="home">
+              <span>Penn State Tournament - Semifinals</span>
+            </div>
+
+            <div class="columns">
+
+              <div class="time">
+                <span>W</span>
+              </div>
+
+              <div class="middle">
+                <span class ="teams">Cornell 2-0 North Eastern</span>
+              </div>
+
+              <div class="place">
+                <span>L</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="outsidebox">
+            <div class="home">
+              <span>Penn State Tournament - Group Stage</span>
+            </div>
+
+            <div class="columns">
+
+              <div class="time">
+                <span>T</span>
+              </div>
+
+              <div class="middle">
+                <span class ="teams">Cornell 1-1 Penn State</span>
+              </div>
+
+              <div class="place">
+                <span>T</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="outsidebox">
+            <div class="home">
+              <span>Penn State Tournament - Group Stage</span>
+            </div>
+
+            <div class="columns">
+
+              <div class="time">
+                <span>W</span>
+              </div>
+
+              <div class="middle">
+                <span class ="teams">Cornell 2-0 Lehigh</span>
+              </div>
+
+              <div class="place">
+                <span>L</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="outsidebox">
+            <div class="home">
+              <span>Regional Tournament - Knockout Stage</span>
+            </div>
+
+            <div class="columns">
+
+              <div class="time">
+                <span>L</span>
+              </div>
+
+              <div class="middle">
+                <span class ="teams">Cornell 0-1 Delaware</span>
+              </div>
+
+              <div class="place">
+                <span>W</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="outsidebox">
+            <div class="home">
+              <span>Regional Tournament - Group Stage</span>
+            </div>
+
+            <div class="columns">
+
+              <div class="time">
+                <span>W</span>
+              </div>
+
+              <div class="middle">
+                <span class ="teams">Cornell 3-0 Bedinton</span>
+              </div>
+
+              <div class="place">
+                <span>L</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="outsidebox">
+            <div class="home">
+              <span>Regional Tournament - Group Stage</span>
+            </div>
+
+            <div class="columns">
+
+              <div class="time">
+                <span>T</span>
+              </div>
+
+              <div class="middle">
+                <span class ="teams">Cornell 2-2 Johns Hopkins</span>
+              </div>
+
+              <div class="place">
+                <span>T</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="outsidebox">
+            <div class="home">
+              <span>Regional Tournament - Group Stage</span>
+            </div>
+
+            <div class="columns">
+
+              <div class="time">
+                <span>W</span>
+              </div>
+
+              <div class="middle">
+                <span class ="teams">Cornell 1-0 Brown</span>
+              </div>
+
+              <div class="place">
+                <span>L</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="outsidebox">
+            <div class="home">
+              <span>League Play</span>
+            </div>
+
+            <div class="columns">
+
+              <div class="time">
+                <span>W</span>
+              </div>
+
+              <div class="middle">
+                <span class ="teams">Cornell 2-1 Ithaca</span>
+              </div>
+
+              <div class="place">
+                <span>L</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="outsidebox">
+            <div class="home">
+              <span>League Play</span>
+            </div>
+
+            <div class="columns">
+
+              <div class="time">
+                <span>W</span>
+              </div>
+
+              <div class="middle">
+                <span class ="teams">Cornell 2-0 Cortland</span>
+              </div>
+
+              <div class="place">
+                <span>L</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="outsidebox">
+            <div class="home">
+              <span>League Play</span>
+            </div>
+
+            <div class="columns">
+
+              <div class="time">
+                <span>W</span>
+              </div>
+
+              <div class="middle">
+                <span class ="teams">Cornell 4-3 Syracuse</span>
+              </div>
+
+              <div class="place">
+                <span>L</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div id="year-12" class="hidden">
+          <h2>2012-2013 Season</h2>
+          <p>
+            The 2012-2013 Outdoor Season was another good one for Mundial, going undefeated in its league and representing Cornell for the third straight year at the Regional Tournament.  Mundial also won the 2013 Ivy League championship, beating Yale 2-1 in the Final after beating Princeton,  and Brown on the way.  The team fell just short in the conference tournament, falling to Buffalo 2-1 in the Final.  The team was ranked as high as 2nd in Region One and entered the Regional Tournament as the 6 seed.  The indoor season brought similar success for Mundial.  The team enjoyed itself off the field as well, hosting various social events with other club teams and its traditional senior send off event the weekend before Finals.
+          </p>
+          <!-- Source: Image is owned by the club -->
+          <figure>
+            <img src="images/2013.jpg" alt="2012" class="oldPics"/>
+            <figcaption> 2012-13 Season </figcaption>
+          </figure>
+        </div>
+
+        <div id="year-13" class="hidden">
+          <h2>2013-2014 Season</h2>
+          <p>
+            In the 2013 – 2014 season, Mundial FC continued to build on the successes of the previous seasons. For the fourth straight year, Mundial represented Cornell at the Regional tournament, after remaining unbeaten in the league. The team was even ranked as high as #2 in Region 1 for the second straight year. At Regionals, despite an undefeated group stage effort (and a tie with the eventual tournament winner), Mundial was one spot shy of progressing to the knockout stage. The same triumphs were reflected in the Conference tournament, as Mundial beat Syracuse 2 – 1 in the Final, securing an automatic bid to Regionals for the following season. The indoor season also went well, with only a single loss to break the team’s otherwise perfect indoor record. Off the field, the team continued to grow together during a variety of different social events.
+          </p>
+          <!-- Source: Image is owned by the club -->
+          <figure>
+            <img src="images/2013-14.jpg" alt="2014" class="oldPics"/>
+            <figcaption> 2013-14 Season </figcaption>
+          </figure>
+        </div>
+
+        <div id="year-14" class="hidden">
+          <h2>2014-2015 Season</h2>
+          <p>
+            The 2014 – 2015 season turned out to be another success for Mundial FC. For the fifth time in a row, Cornell Mundial FC was selected to represent the school at the Regional tournament in PA. The team also managed an undefeated season in the fall league. At Regionals, Mundial managed its best effort to date, earning a spot to the semi-finals and only missing out on the finals by one goal. The winter season also proved to be successful for the team, as Mundial won the winter league championship.
+          </p>
+          <!-- Source: Image is owned by the club -->
+          <figure>
+            <img src="images/2014-15.jpg" alt="2015" class="oldPics"/>
+            <figcaption> 2014-15 Season </figcaption>
+          </figure>
+        </div>
+
+        <div id="year-15" class="hidden">
+          <h2>2015-2016 Season</h2>
+          <p>
+            In the 2015 – 2016 season, Mundial proved successful once again. Ranking as high as #5 out of 124 teams in the Northeast Region. For the sixth straight year, the team earned a spot at the Regional tournament, and went undefeated in regular league play. Mundial FC also won the Gorges Classic Tournament in the fall, to cap off an already great season. The team continued to grow together in the winter season and through various social events.
+          </p>
+          <!-- Source: Image is owned by the club -->
+          <figure>
+            <img src="images/2015-16.jpg" alt="2016" class="oldPics"/>
+            <figcaption> 2015-2016 Season </figcaption>
+          </figure>
+
+        </div>
+
+        <div id="year-16" class="hidden">
+          <h2>2016-2017 Season</h2>
+          <p>
+            The 2016-17 campaign saw Mundial start off on the right note, winning the Gorges Classic tournament to become back-to-back champions.  The team finished the season just a point shy of the league title.  With a successful winter league competing in the men's league and co-ed league with Women's Club Soccer, Mundial attended the inaugural Niagara Soccer tournament in Niagara, NY.  Off the pitch, Mundial co-hosted a charity charity tournament Kick it For Kids which raised over $600 for the local Ithaca Youth Bureau.
+          </p>
+          <!-- Source: Image is owned by the club -->
+          <figure>
+            <img src="images/2016-17.jpg" alt="2017" class="oldPics"/>
+            <figcaption> 2017 Regional Tournament, New Castle, Delaware </figcaption>
+          </figure>
+
+          <figure>
+            <img src="images/2017tournament.jpg" alt="charity" class="oldPics"/>
+            <figcaption> 2017 Kick It For Kids Charity Tournament </figcaption>
+          </figure>
+
+        </div>
+
+        <div id="year-17" class="hidden">
+          <h2>2017-2018 Season</h2>
+          <p>
+            The 2017-18 season built on recent success to put together one of the most historical years for Mundial. We finished the fall season as undefeated champions of the Finger Lakes League in Region 1. Having qualified for the Regional Tournament in New Castle, Delaware during the final week of October, Mundial drove several hours to compete against other quality teams from the northeast. In November, Mundial then flew to Phoenix, Arizona to play in the National Tournament amongst teams from all over the country.
+            During the spring semester, Mundial again entered in the indoor Men's Competitive and co-ed leagues. We plan to compete in the second annual Gorges Classic "Viagra in Niagara: World Cup Classic" tournament.
+          </p>
+          <!-- Source: Image is owned by the club -->
+          <figure>
+            <img src="images/2017-18.jpg" alt="2018" class="oldPics"/>
+            <figcaption> 2018 Gorges Classic Tournament, Ithaca, New York </figcaption>
+          </figure>
+
+          <h2>Results</h2>
+
+          <div class="outsidebox">
+            <div class="home">
+              <span>Regional Tournament - Group Stage</span>
+            </div>
+
+            <div class="columns">
+
+              <div class="time">
+                <span>L</span>
+              </div>
+
+              <div class="middle">
+                <span class ="teams">Cornell 2-1 UConn</span>
+              </div>
+
+              <div class="place">
+                <span>W</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="outsidebox">
+            <div class="home">
+              <span>Regional Tournament - Group Stage</span>
+            </div>
+
+            <div class="columns">
+
+              <div class="time">
+                <span>L</span>
+              </div>
+
+              <div class="middle">
+                <span class ="teams">Cornell 2-0 Fordham</span>
+              </div>
+
+              <div class="place">
+                <span>W</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="outsidebox">
+            <div class="home">
+              <span>Regional Tournament - Group Stage</span>
+            </div>
+
+            <div class="columns">
+
+              <div class="time">
+                <span>T</span>
+              </div>
+
+              <div class="middle">
+                <span class ="teams">Cornell 0-0 Harvard</span>
+              </div>
+
+              <div class="place">
+                <span>T</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div id="year-18" class="hidden">
+          <h2>2018-2019 Season</h2>
+          <p>
+            ONGOING!
+          </p>
+
+          <h2>Results</h2>
+
+          <div class="outsidebox">
+            <div class="home">
+              <span>League Play</span>
+            </div>
+
+            <div class="columns">
+
+              <div class="time">
+                <span>L</span>
+              </div>
+
+              <div class="middle">
+                <span class="date">Sep.01</span>
+                <span class ="teams">Oneonta 0-3 Cornell</span>
+              </div>
+
+              <div class="place">
+                <span>W</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</body>
+
+</html>

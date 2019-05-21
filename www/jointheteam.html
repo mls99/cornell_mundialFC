@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="scripts/jquery-3.3.1.min.js" type="text/javascript"></script>
+  <script src="scripts/feedback.js" type="text/javascript"></script>
+
+  <meta charset="UTF-8">
+  <title>Cornell Mundial F.C.</title>
+
+  <link rel="stylesheet" type="text/css" href="styles/all.css" media="all">
+  <script type="text/javascript" src="scripts/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="scripts/dropdown.js"></script>
+</head>
+
+<body>
+  <div class="whole-page">
+    <div class="desktop-nav">
+      <!-- Source: Image is owned by the club -->
+      <a href="index.html">
+        <img src="images/logo.jpeg" alt="Club Logo" class="logo"/>
+      </a>
+
+      <ul class="nav-links">
+        <li>
+          <a href="index.html">Welcome!</a>
+        </li>
+
+        <li>
+          <a href="schedule.html">Schedule</a>
+        </li>
+
+        <li>
+          <a href="members.html">Members</a>
+        </li>
+
+        <li>
+          <a href="teamhistory.html">Team History</a>
+        </li>
+
+        <li>
+          <a href="jointheteam.html">Join The Team!</a>
+        </li>
+      </ul>
+
+      <div class="social-media flex-row">
+        <div class="sm-link">
+          <a href="https://www.facebook.com/cornellmundialfc/" target="_blank">
+            <!-- Source: https://en.facebookbrand.com/#brand-guidelines-assets -->
+            <img src="images/fb-logo.png" alt="FB Logo">
+          </a>
+          <a class="cite" href="https://en.facebookbrand.com/#brand-guidelines-assets">Icon Source</a>
+        </div>
+
+        <div class="sm-link">
+          <a href="mailto:az262@cornell.edu">
+            <!-- Source: http://gsuite.google.com/setup/resources/logos/ -->
+            <img src="images/gmail-logo.png" alt="GMail Logo">
+          </a>
+          <a class="cite" href="http://gsuite.google.com/setup/resources/logos/">Icon Source</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="mobile-nav">
+      <ul id="dropdown-links" class="nav-links hidden">
+        <li>
+          <a href="index.html">Welcome!</a>
+        </li>
+
+        <li>
+          <a href="schedule.html">Schedule</a>
+        </li>
+
+        <li>
+          <a href="members.html">Members</a>
+        </li>
+
+        <li>
+          <a href="teamhistory.html">Team History</a>
+        </li>
+
+        <li>
+          <a href="jointheteam.html">Join The Team!</a>
+        </li>
+
+      </ul>
+    </div>
+
+    <div class="main-content">
+      <header class="main-header">
+        <div class="flex-row">
+          <a id="dropdown" href="#">
+            &#8801;
+          </a>
+
+          <div class="header-title">
+            <h1>Cornell Mundial F.C.</h1>
+            <h2>Men's Club Soccer</h2>
+          </div>
+        </div>
+      </header>
+
+
+      <h2> Join the Team! </h2>
+    <div id="joinBody">
+      <h3> Tryout Information: </h3>
+      <p> If you are interested in trying out for Mundial in the Fall of 2018, tryouts will be held in the last week of August on the soccer field behind North Campus. If you have any additional questions or concerns, feel free to reach out to Cornell Mundial F.C. via the form below. </p>
+
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2943.6473539351596!2d-76.48227921149521!3d42.45651878183413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d082225e438b43%3A0xa6aebd92950173a7!2sTobin+Field+House%2C+Ithaca%2C+NY+14850!5e0!3m2!1sen!2sus!4v1543880211341" width="600" height="250" style="border:0" allowfullscreen></iframe>
+
+      <h3> Contact us: </h3>
+      <p> If you have any questions, comments, or concerns, feel free to reach out to the Men's Club Soccer Team through this form! We'll be sure to get back to you as soon as possible. </p>
+
+    </div>
+
+      <form id="form" method="post" action="https://www.cs.cornell.edu/courses/cs1300/2018fa/submit.php" novalidate>
+      <div id="shortanswer">
+        <div>
+          <label>Name:</label>
+          <input id="name" name="name" type="text" placeholder="Name" required/>
+          <div id="nameFeedback" class="feedback hidden"> Your name is required. </div>
+        </div>
+
+        <div>
+          <label> Email: </label>
+          <input id="email" name="email" type="email" placeholder="Email" required/>
+          <div id="emailFeedback" class="feedback hidden"> A valid email is required. </div>
+        </div>
+
+        <div>
+          <label> netID: </label>
+          <input id="netID" name="netID" type="text" placeholder="netID"/>
+        </div>
+      </div>
+        <div>
+          <label>I am a: </label>
+          <select name="who" id="who" required>
+          <option value="">---select option---</option>
+          <option value="Student">Prospective Member</option>
+          <option value="Current Member">Current Member</option>
+          <option value="Parent">Parent</option>
+          <option value="Other">Other</option>
+        </select>
+        <div id="whoFeedback" class="feedback hidden"> This is a required field. </div>
+        </div>
+
+        <div id="longanswer">
+        <div>
+          <label>Message to Cornell Mundial F.C.:</label>
+          <div id="messageFeedback" class="feedback hidden"> Providing a brief message is required. </div>
+          <textarea name="message" cols="60" rows="5" id="message" required></textarea>
+        </div>
+
+      </div>
+
+      <div class="submit">
+        <input type="submit">
+      </div>
+      </form>
+
+
+    </div>
+  </div>
+</body>
+
+</html>
